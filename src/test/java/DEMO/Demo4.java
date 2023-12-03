@@ -15,7 +15,6 @@ public class Demo4 {
 		given().get("users?page=2").
 		then().statusCode(403).
 		body("data[1].id",equalTo(8));
-		System.out.print("Heelloow");
 		
 		
 		
